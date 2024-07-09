@@ -40,7 +40,7 @@ function Registration() {
 
   return (
     <div className="text-center">
-      <h4 className="text-2xl text-green-800">User Registration form</h4>
+      <h4 className="text-2xl text-green-800">User Registration Form</h4>
       <form
         className="border border-blue-950 w-2/5 ml-auto mr-auto mt-5 text-left pl-7"
         onSubmit={handleSubmit}
