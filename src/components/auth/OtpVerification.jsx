@@ -38,7 +38,7 @@ function OtpVerification() {
   return (
     <>
       <div className="text-center">
-        <h4 className="text-2xl text-green-800">Email Verification form</h4>
+        <h4 className="text-2xl text-green-800">Email Verification Form</h4>
         <form
           className="border border-blue-950 w-2/5 ml-auto mr-auto mt-5 text-left pl-7"
           onSubmit={handleSubmit}
@@ -68,7 +68,7 @@ function OtpVerification() {
           <input
             className="p-4 m-4 rounded bg-green-500"
             type="submit"
-            value="Verified Email"
+            value="Verify Email"
           />
           <input
             className="p-4 m-4 rounded bg-blue-400"
