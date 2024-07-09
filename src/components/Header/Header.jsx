@@ -1,31 +1,31 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Header.css"
 
 export const Header = () => {
   return (
-    <header className="w-screen px-6 py-2 flex justify-center items-center border border-red-600">
-        <div className="w-24">
-          <img
-            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-            className="w-full"
-            title="Flipkart"
-          />
-        </div>
-        <div className="mr-auto w-2/5 mx-4">
-          <input
-            type="text"
-            className="bg-blue-50 border border-slate-700 rounded-md w-full"
-          />
-        </div>
-        <nav>
-          <ul className="flex justify-center items-center">
-            <Operation link="/login" name="Login" />
-            <Operation link="/registration" name="Registration" />
-            <Operation link="/" name="Cart" />
-            <Operation link="/" name="Become a Seller" />
-            <Operation link="/" name="..." />
-          </ul>
-        </nav>
+    <header className="w-screen px-6 py-2 flex justify-center items-center">
+      <div className="w-24">
+        <NavLink to="/">
+        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" width="160" height="40" title="Flipkart"/>
+        </NavLink>
+      </div>
+      <div className="mr-auto w-2/5 mx-4">
+        <input
+          type="text"
+          className="bg-blue-50 border border-slate-700 rounded-md w-full"
+          placeholder="Search Products..."
+        />
+      </div>
+      <nav>
+        <ul className="flex justify-center items-center">
+          <Operation link="/login" name="Login" />
+          <Operation link="/registration" name="Registration" />
+          <Operation link="/cart" name="Cart" />
+          <Operation link="/becomeASeller" name="Become a Seller" />
+          <Operation link="/..." name="..." />
+        </ul>
+      </nav>
     </header>
   );
 };
